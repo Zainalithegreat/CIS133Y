@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="ttk.Frame" id="topLevel" named="True">
+    <property name="height">200</property>
+    <property name="padding">10</property>
+    <property name="width">200</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="headerLabel" named="True">
+        <property name="compound">bottom</property>
+        <property name="cursor">arrow</property>
+        <property name="font">{Arial} 16 {bold}</property>
+        <property name="justify">center</property>
+        <property name="state">normal</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Bitcoin to USD</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="inputFrame" named="True">
+        <property name="height">200</property>
+        <property name="padding">10</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Entry" id="Input" named="True">
+            <property name="font">TkTextFont</property>
+            <property name="justify">center</property>
+            <property name="state">normal</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">3</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="inputLabel" named="True">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Bitcoin: </property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="Button" named="True">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">2</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="clearButton" named="True">
+            <property name="command" type="command" cbtype="simple">clear</property>
+            <property name="text" translatable="yes">clear</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="okButton" named="True">
+            <property name="command" type="command" cbtype="simple">calculate</property>
+            <property name="text" translatable="yes">OK</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">5</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,3 @@
+This is a simple GUI with database connectivity program implemented in Python using Tkinter, Pygubu, and pymssql. This program retrieves and displays data from a SQL server into a Graphical User Interface(GUI).
+
+This program retrieves names from an SQL Server database and displays records for those names spanning from the year 1915 to 2014, providing a comprehensive view of the data over the specified timeframe.
